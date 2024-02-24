@@ -12,3 +12,9 @@ studio-ousia/mluke-base: https://drive.google.com/drive/folders/15CYs7VuaLQqgPxe
 
 # English dataset
 studio-ousia/mluke-base: https://drive.google.com/drive/folders/1w8anG8TREskpuNLiviYl0NZLNNxqlWv8?usp=sharing
+
+# t-SNE embeddings
+https://drive.google.com/drive/folders/1fcWeigGF6dLWdfyDsdQVBsQErpm-UeUp?usp=sharing
+
+# English dataset trained models for t-SNE
+https://drive.google.com/drive/folders/1-60uS-h64tC42ybk2zqac74iZFJt08so?usp=sharing
