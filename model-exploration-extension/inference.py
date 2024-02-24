@@ -156,7 +156,7 @@ if __name__ == "__main__":
 
         ## Load the tokenizer
         tokenizer_path = model_path[1]
-        if 'luke' in model_path[0]: 
+        if 'luke' in model_path[0] or 'roberta' in model_path[0]: 
             tokenizer = RobertaTokenizerFast.from_pretrained("roberta-base")
         else:
             tokenizer = AutoTokenizer.from_pretrained(tokenizer_path) 
