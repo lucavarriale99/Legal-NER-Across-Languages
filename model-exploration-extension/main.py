@@ -9,6 +9,9 @@ from transformers import Trainer, DefaultDataCollator, TrainingArguments
 
 from utils.dataset import LegalNERTokenDataset
 
+#import spacy
+#nlp = spacy.load("en_core_web_sm")
+
 
 ############################################################
 #                                                          #
@@ -157,7 +160,6 @@ if __name__ == "__main__":
             / (results["exact"]["precision"] + results["exact"]["recall"] + 1e-9),
         }
 
-
     for model_path in model_paths:
 
         print("MODEL: ", model_path)
@@ -217,7 +219,7 @@ if __name__ == "__main__":
             fp16=False,
             fp16_full_eval=False,
             metric_for_best_model="f1-strict",
-            dataloader_num_workers=2,
+            dataloader_num_workers=4,
             dataloader_pin_memory=True,
         )
 
@@ -236,10 +238,12 @@ if __name__ == "__main__":
 
         ## Train the model and save it
         trainer.train(resume_from_checkpoint=resume_checpoint)
+       # trainer.train()
         trainer.save_model(output_folder)
         evaluation = trainer.evaluate()
         print("evaluation:")
         print(evaluation)
+  
 
 
 
