@@ -1,4 +1,10 @@
 # Towards Legal-NER Across Languages: Multilingual Framework and Evaluation
+
+Legal Named Entity Recognition (L-NER) presents unique challenges due to the complex legal language and varied structures of legal documents. This study adapts NER models to the legal context, addressing the additional complexity in a multi-language domain. By employing dedicated models like various Legal BERTs and LUKEs, tailored for both monolingual and multilingual tasks, along with a novel multilingual dataset, we develop a comprehensive NER model for analyzing legal documents across languages. The research evaluates model performance on language-specific datasets, explores model embeddings using t-SNE visualizations, and assesses the effectiveness of multilingual adaptation. 
+Results indicate promising performance from multilingual LUKE, particularly on a unified dataset, demonstrating its adaptability to diverse legal contexts. The t-SNE visualizations reveal distinct patterns in entity categorization among different models, providing insights into their interpretability and performance nuances. This research offers valuable insights for advancing NER models in the legal domain, emphasizing the importance of datasets and labels in multilingual adaptation.
+
+For further information, please refer to the [paper](https://github.com/lucavarriale99/Legal-NER-Across-Languages/blob/main/paper.pdf)
+
 Pablo Borrelli: <s303878@studenti.polito.it>
 
 Daniele Mansillo: <s319297@studenti.polito.it>
